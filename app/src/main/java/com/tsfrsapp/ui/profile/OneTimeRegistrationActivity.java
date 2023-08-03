@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import com.tsfrsapp.R;
 import com.tsfrsapp.databinding.ActivityOneTimeRegistrationBinding;
+import com.tsfrsapp.ui.home.HomeActivity;
 import com.tsfrsapp.ui.login.LoginActivity;
 
 public class OneTimeRegistrationActivity extends AppCompatActivity {
@@ -18,6 +19,9 @@ public class OneTimeRegistrationActivity extends AppCompatActivity {
         _binding = DataBindingUtil.setContentView(this,R.layout.activity_one_time_registration);
         _binding.btnEdit.setOnClickListener( v-> {
             startActivity(new Intent(OneTimeRegistrationActivity.this, OneTimeEditActivity.class));
+        });
+        _binding.btnConfirm.setOnClickListener(v->{
+            startActivity(new Intent(OneTimeRegistrationActivity.this, OneTimeConfirmActivity.class));
         });
     }
 

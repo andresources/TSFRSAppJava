@@ -86,6 +86,11 @@
         <item name="android:fontFamily">@font/graphiksemibold</item>
         <item name="android:textSize">@dimen/_20ssp</item>
     </style>
+    <style name="top_heading" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/graphiksemibold</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
     <style name="heading_underline1" parent="Widget.MaterialComponents.TextView">
         <item name="android:textColor">@color/drak_gray</item>
         <item name="android:fontFamily">@font/graphikregular</item>
@@ -114,6 +119,16 @@
         <item name="android:fontFamily">@font/poppinsmedium</item>
         <item name="android:textSize">@dimen/_8ssp</item>
         <item name="android:background">@color/white</item>
+    </style>
+    <style name="label5_row_text" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/_8ssp</item>
+    </style>
+    <style name="label5_row_text_heading" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppinsbold</item>
+        <item name="android:textSize">@dimen/_8ssp</item>
     </style>
     <style name="label2_style_camera" parent="Widget.MaterialComponents.TextView">
         <item name="android:textColor">@color/black</item>
@@ -148,6 +163,11 @@
         <item name="android:layout_height">@dimen/_100sdp</item>
         <item name="android:layout_width">@dimen/_100sdp</item>
         <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:background">@drawable/lancher_icon</item>
+    </style>
+    <style name="logo_style1">
+        <item name="android:layout_height">@dimen/_60sdp</item>
+        <item name="android:layout_width">@dimen/_60sdp</item>
         <item name="android:background">@drawable/lancher_icon</item>
     </style>
 </resources>

@@ -13,10 +13,10 @@
         android:theme="@style/Theme.TSFRS"
         tools:targetApi="31">
         <activity
-            android:name=".HomeActivity"
+            android:name=".ui.home.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".OneTimeConfirmActivity"
+            android:name=".ui.profile.OneTimeConfirmActivity"
             android:exported="false" />
         <activity
             android:name=".ui.profile.OneTimeEditActivity"

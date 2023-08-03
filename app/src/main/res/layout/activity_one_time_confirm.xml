@@ -194,6 +194,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_height="wrap_content">
                 <Button
+                    android:id="@+id/btnCancel"
                     style="@style/btn_style4_cancel"
                     android:layout_weight="1"
                     android:text="@string/cancel"
@@ -201,6 +202,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <Button
+                    android:id="@+id/btnSubmit"
                     style="@style/btn_style5_submit"
                     android:layout_weight="1"
                     android:textColor="#0a3622"
