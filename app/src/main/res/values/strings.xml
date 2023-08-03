@@ -17,4 +17,12 @@
     <string name="cancel">Cancel</string>
     <string name="send">Send</string>
     <string name="enter_your_reason_for_request">Enter your reason for request</string>
+    <string name="submit">Submit</string>
+    <string name="capture_your_live_photo">Capture Your Live Photo*</string>
+    <string name="photo_id_proof">Photo ID Proof*</string>
+    <string name="ex_aadhaar_card_driving_licence_passport_voter_card">ex: Aadhaar Card, Driving Licence, Passport, Voter Card.</string>
+    <string name="card_front_side">card front side</string>
+    <string name="card_back_side">card back side</string>
+    <string name="oprn_camera">Oprn Camera</string>
+    <string name="accept_rnit_terms_amp_conditions"><![CDATA[Accept RNIT Terms & Conditions]]></string>
 </resources>

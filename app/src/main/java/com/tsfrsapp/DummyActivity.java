@@ -15,17 +15,17 @@ import dagger.hilt.android.AndroidEntryPoint;
 import io.reactivex.disposables.CompositeDisposable;
 
 @AndroidEntryPoint
-public class MainActivity extends AppCompatActivity {
+public class DummyActivity extends AppCompatActivity {
     @Inject
     LocationDao student;
     private ActivityMainBinding _binding;
     private final CompositeDisposable mDisposable = new CompositeDisposable();
-    private ProfileViewModel profileViewModel;
+    private DummyViewModel profileViewModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         _binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
-        profileViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
+        profileViewModel = new ViewModelProvider(this).get(DummyViewModel.class);
         mDisposable
                 .add(
                     profileViewModel.insertDummyDataToRoomDB()

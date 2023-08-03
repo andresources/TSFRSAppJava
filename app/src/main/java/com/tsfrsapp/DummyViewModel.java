@@ -6,7 +6,6 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 
 import com.tsfrsapp.data.dto.LocationsModel;
-import com.tsfrsapp.data.remote.LocationDao;
 import com.tsfrsapp.data.remote.LocationEntity;
 import com.tsfrsapp.data.repository.RoomDBRepo;
 
@@ -21,10 +20,10 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
 @HiltViewModel
-public class ProfileViewModel extends AndroidViewModel{
+public class DummyViewModel extends AndroidViewModel{
     private RoomDBRepo repo;
     @Inject
-    public ProfileViewModel(@NonNull Application application, RoomDBRepo _repo) {
+    public DummyViewModel(@NonNull Application application, RoomDBRepo _repo) {
         super(application);
         repo = _repo;
     }

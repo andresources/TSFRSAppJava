@@ -7,8 +7,6 @@ import androidx.core.splashscreen.SplashScreenViewProvider;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.tsfrsapp.MainActivity;
 import com.tsfrsapp.R;
 import com.tsfrsapp.ui.login.LoginActivity;
 

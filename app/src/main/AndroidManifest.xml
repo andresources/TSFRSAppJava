@@ -13,6 +13,12 @@
         android:theme="@style/Theme.TSFRS"
         tools:targetApi="31">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OneTimeConfirmActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.profile.OneTimeEditActivity"
             android:exported="false" />
         <activity
@@ -32,7 +38,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".DummyActivity"
             android:exported="false" />
     </application>
 
