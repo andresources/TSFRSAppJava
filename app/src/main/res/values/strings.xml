@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TSFRS</string>
+    <string name="login_text">Login</string>
+    <string name="edittext_email"><font size="15">enter your Mobile No. or Email id</font></string>
+    <string name="edittext_pwd"><font size="15">enter your password</font></string>
+    <string name="btn_login">Login</string>
+    <string name="email_or_mobile_no">Email or Mobile No.</string>
+    <string name="forgot_password">forgot password ?</string>
+    <string name="field_executive_details">Field Executive Details</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="executive_name">Executive Name</string>
+    <string name="zone">Zone</string>
+    <string name="district">District</string>
+    <string name="mandal">Mandal</string>
+    <string name="edit">Edit</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="enter_your_reason_for_request">Enter your reason for request</string>
+</resources>
