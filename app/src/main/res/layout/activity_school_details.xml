@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg_color"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeActivity">
+
+        <include android:id="@+id/header" layout="@layout/top_header"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/light_gray"
+            android:layout_height="@dimen/_1sdp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/heading_primary_bold"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:text="MPPS Abdullapur School"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/heading_primary"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:text="UDISE:3454545"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_height="@dimen/_1sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/heading_secondary"
+            android:gravity="center"
+            android:text="Abdullapur Villege,AbdullapurmetMandal Rangareddy District ,Telangana"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/top_rouded_bg"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/top_left_bg"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/head_master"
+                        style="@style/label2_style"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sivaram Ayyagai"
+                        style="@style/label4_style"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:background="@color/light_gray"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/top_right_bg"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mobile_no"
+                        style="@style/label2_style"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90400440044"
+                        style="@style/label4_style"
+                        />
+                </LinearLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/light_gray"
+                android:layout_height="@dimen/_1sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/bottom_rounded"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    style="@style/label2_style"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sivaramayyagari@gmail.com"
+                    style="@style/label4_style"
+                    />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:padding="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:background="@drawable/student_bg"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivStudentEnroolment"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/student_enrollment"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"/>
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_below="@id/ivStudentEnroolment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/student_enrollment"
+                    style="@style/label4_style"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_15sdp"
+                android:background="@drawable/student_bg"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivStatusReport"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/status_report"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"/>
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_below="@id/ivStatusReport"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_report"
+                    style="@style/label4_style"
+                    />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/rlTraingDetails"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:padding="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:background="@drawable/student_bg"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivTrainingDetails"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/training_details"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"/>
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_below="@id/ivTrainingDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/training_details"
+                    style="@style/label4_style"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_15sdp"
+                android:background="@drawable/student_bg"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivDocumentCenter"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/document_center"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"/>
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_below="@id/ivDocumentCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/document_center"
+                    style="@style/label4_style"
+                    />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

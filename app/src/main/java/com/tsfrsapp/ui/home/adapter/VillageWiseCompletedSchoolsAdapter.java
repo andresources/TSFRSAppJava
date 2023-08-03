@@ -1,6 +1,7 @@
 package com.tsfrsapp.ui.home.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,11 +9,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.tsfrsapp.R;
 import com.tsfrsapp.ui.model.MandalWiseCompletedSchoolModel;
 import com.tsfrsapp.ui.model.VillageWiseCompletedSchoolModel;
+import com.tsfrsapp.ui.school_details.SchoolDetailsActivity;
 
 import java.util.List;
 
@@ -41,6 +44,9 @@ public class VillageWiseCompletedSchoolsAdapter extends RecyclerView.Adapter<Vil
         }else{
             holder.ivStatus.setVisibility(View.INVISIBLE);
         }
+        holder.ll.setOnClickListener(v->{
+            context.startActivity(new Intent(context, SchoolDetailsActivity.class));
+        });
     }
 
     @Override
@@ -51,12 +57,14 @@ public class VillageWiseCompletedSchoolsAdapter extends RecyclerView.Adapter<Vil
     class CompletedSchoolsViewHolder extends RecyclerView.ViewHolder {
         TextView tvSchoolName,tvClass,tvNoOfStudents;
         ImageView ivStatus;
+        LinearLayoutCompat ll;
         public CompletedSchoolsViewHolder(@NonNull View itemView) {
             super(itemView);
             ivStatus = itemView.findViewById(R.id.ivStatus);
             tvSchoolName = itemView.findViewById(R.id.tvSchoolName);
             tvClass = itemView.findViewById(R.id.tvClass);
             tvNoOfStudents = itemView.findViewById(R.id.tvNoOfStudents);
+            ll = itemView.findViewById(R.id.ll);
         }
     }
 }

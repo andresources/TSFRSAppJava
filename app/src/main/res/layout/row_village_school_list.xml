@@ -6,6 +6,7 @@
     android:layout_marginTop="@dimen/_5sdp"
     android:background="@drawable/row_bg"
     android:paddingTop="@dimen/_10sdp"
+    android:id="@+id/ll"
     android:paddingBottom="@dimen/_10sdp"
     android:paddingLeft="@dimen/_5sdp"
     android:paddingRight="@dimen/_5sdp"

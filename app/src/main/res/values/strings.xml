@@ -27,4 +27,14 @@
     <string name="accept_rnit_terms_amp_conditions"><![CDATA[Accept RNIT Terms & Conditions]]></string>
     <string name="search_village">Search Village</string>
     <string name="search_school">Search School</string>
+    <string name="head_master">Head Master</string>
+    <string name="email">Email</string>
+    <string name="document_center">Document\nCenter</string>
+    <string name="training_details">Training\nDetails</string>
+    <string name="status_report">Status\nReport</string>
+    <string name="student_enrollment">Student\nEnrollment</string>
+    <string name="enter_staff">Enter Staff *</string>
+    <string name="staff_desigation">Staff Designation *</string>
+    <string name="staff_mobileno">Staff mobile no. *</string>
+    <string name="staff_email">Staff email id *</string>
 </resources>

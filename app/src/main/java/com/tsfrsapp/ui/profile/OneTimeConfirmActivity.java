@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import com.tsfrsapp.R;
 import com.tsfrsapp.databinding.ActivityOneTimeConfirmBinding;
@@ -19,7 +20,10 @@ public class OneTimeConfirmActivity extends AppCompatActivity {
             finish();
         });
         _binding.btnSubmit.setOnClickListener(v->{
-            startActivity(new Intent(OneTimeConfirmActivity.this, HomeActivity.class));
+            Intent intent = new Intent(OneTimeConfirmActivity.this, HomeActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK );
+            startActivity(intent);
+            finish();
         });
     }
 }
