@@ -25,4 +25,6 @@
     <string name="card_back_side">card back side</string>
     <string name="oprn_camera">Oprn Camera</string>
     <string name="accept_rnit_terms_amp_conditions"><![CDATA[Accept RNIT Terms & Conditions]]></string>
+    <string name="search_village">Search Village</string>
+    <string name="search_school">Search School</string>
 </resources>

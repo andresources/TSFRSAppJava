@@ -1,32 +1,25 @@
 package com.tsfrsapp.ui.model;
-public class MandalWiseCompletedSchoolModel {
-    private String Mandal;
-    private int NoOfVillages;
-    private int NoOfSchools;
 
-    public MandalWiseCompletedSchoolModel(String mandal, int noOfVillages, int noOfSchools, float completedPer) {
-        Mandal = mandal;
-        NoOfVillages = noOfVillages;
+public class MandalWiseCompletedSchoolModel {
+    private String Village;
+    private int NoOfSchools;
+    private int NoOfStudents;
+
+    public MandalWiseCompletedSchoolModel(String village, int noOfSchools, int noOfStudents, float completedPer) {
+        Village = village;
         NoOfSchools = noOfSchools;
+        NoOfStudents = noOfStudents;
         CompletedPer = completedPer;
     }
 
     private float CompletedPer;
 
-    public String getMandal() {
-        return Mandal;
+    public String getVillage() {
+        return Village;
     }
 
-    public void setMandal(String mandal) {
-        Mandal = mandal;
-    }
-
-    public int getNoOfVillages() {
-        return NoOfVillages;
-    }
-
-    public void setNoOfVillages(int noOfVillages) {
-        NoOfVillages = noOfVillages;
+    public void setVillage(String village) {
+        Village = village;
     }
 
     public int getNoOfSchools() {
@@ -37,6 +30,14 @@ public class MandalWiseCompletedSchoolModel {
         NoOfSchools = noOfSchools;
     }
 
+    public int getNoOfStudents() {
+        return NoOfStudents;
+    }
+
+    public void setNoOfStudents(int noOfStudents) {
+        NoOfStudents = noOfStudents;
+    }
+
     public float getCompletedPer() {
         return CompletedPer;
     }
@@ -44,6 +45,4 @@ public class MandalWiseCompletedSchoolModel {
     public void setCompletedPer(float completedPer) {
         CompletedPer = completedPer;
     }
-
-
 }

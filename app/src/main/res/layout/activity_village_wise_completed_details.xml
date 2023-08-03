@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg_color"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeActivity">
+        <include android:id="@+id/header" layout="@layout/top_header"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/light_gray"
+            android:layout_height="@dimen/_1sdp"/>
+        <TextView
+            android:id="@+id/tvDistrict"
+            android:text="Rangareddy District"
+            style="@style/heading_primary_bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvMandal"
+            android:text="Abdullapurmet Mandal"
+            style="@style/heading_primary"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvVillage"
+            android:text="AAbdullapur Village"
+            style="@style/heading_secondary"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableRight="@drawable/ic_search"
+            android:hint="@string/search_school"
+            style="@style/editext1_style"
+            />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="School Name"
+                android:layout_weight="0.58"
+                style="@style/label5_row_text_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Class"
+                android:layout_weight="0.20"
+                style="@style/label5_row_text_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="0.22"
+                android:text="No.of Students"
+                style="@style/label5_row_text_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
